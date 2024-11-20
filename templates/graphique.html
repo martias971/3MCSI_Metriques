@@ -29,7 +29,7 @@
     chart.draw(dataTable, options);
   }
   // Récupération de données depuis notre API /tawarano/
-  fetch('/tawarano/')
+  fetch('https://martias971.alwaysdata.net/TP/tawarano/')
     .then(response => response.json())
     .then(data => {
       drawChart(data);
